@@ -1,0 +1,175 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	   
+        <link rel="stylesheet" type="text/css" href="styleoefening2.css">
+	    
+    </head>
+    
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <h1>Registreer</h1>
+                <p>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</p>
+
+                <div class="col-8">
+                <form id="theForm" novalidate> 
+
+                    <div class="row">
+                        <div class="col">
+                                <div class="form-group">
+                                  <label for="firstName">Voornaam</label>
+                                  <input type="voornaam" class="form-control" id="firstName" aria-describedby="firstName" placeholder="Uw voornaam" required>
+                                </div>
+                        </div>
+                        <div class="col">
+                                <div class="form-group">
+                                  <label for="LastName">Achternaam</label>
+                                  <input type="lastName" class="form-control" id="lastName" aria-describedby="lastName" placeholder="Uw achternaam" required>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Gebruikersnaam</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="userName" class="form-control" id="userName" placeholder="divoc91">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mailadres</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="you@example.com">  
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Wachtwoord</label>
+                        <input type="password" class="form-control" id="passwordOne" placeholder="">
+                        <small id="password" class="form-text text-muted">Je wachtwoord moet minstens 8 tekens lang zijn.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Herhaal wachtwoord</label>
+                        <input type="password" class="form-control" id="passwordTwo" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adres">Adres</label>
+                        <input type="adres" class="form-control" id="adres" aria-describedby="adres" placeholder="Uw adres en huisnummer">  
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-5">
+                            <label for="inputCountry">Land</label>
+                            <select id="inputCountry" class="form-control">
+                                <option selected></option>
+                                <option>Belgie</option>
+                                <option>Frankrijk</option>
+                                <option>Duitsland</option>
+                                <option>Nederland</option>
+                                <option>Portugal</option>
+                                <option>Spanje</option>
+                                <option>Italie</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="inputState">Provincie</label>
+                            <select id="inputState" class="form-control">
+                                <option selected></option>
+                                <option>Antwerpen</option>
+                                <option>West Vlaanderen</option>
+                                <option>Oost Vlaanderen</option>
+                                <option>Limburg</option>
+                                <option>Vlaams Braband</option>
+                                <option>Luik</option>
+                                <option>Waals Braband</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="inputZip">Postcode</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col">
+                            <h4>Hou me op de hoogte</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck1">
+                                  Inschrijven voor onze nieuwsbrief
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                <label class="form-check-label" for="defaultCheck2">
+                                  Ik ga akkoord met de algemene voorwaarden.
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col">
+                            <h4>Betaling</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                 Banking app
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                 Overschrijving
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                  Visa Card
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    PayPal
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+
+                    <hr>
+                    
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary btn-lg" type="submit">Wave your magic wand</button>
+                    </div>
+
+                </form> 
+                </div>
+
+                <div class="col-4">
+                    <div id="succesAlert" class="alert alert-success" role="alert">
+                        
+                      </div>
+                      <div id="errorddAlert" class="alert alert-danger" role="alert">
+                        <p id="errorAlert"></p>
+                      </div>
+                      <div class="alert alert-primary" role="alert">
+                        This is a primary alert—check it out!
+                      </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="opdracht.js"></script>
+
+    </body>
+</html>
